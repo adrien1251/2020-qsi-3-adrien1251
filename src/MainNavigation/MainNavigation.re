@@ -31,8 +31,11 @@ let make = _ => {
   | ["randomDog"] => ReactDOMRe.render(<FetchRandomDog />, makeContainer("1 random Dog"));
   | ["threeDog"] => ReactDOMRe.render(<FetchedDogPictures />, makeContainer("3 random Dog"));
   | ["blinkingGreeting"] => ReactDOMRe.render(<BlinkingGreeting>{React.string("Blinking dog")}</BlinkingGreeting>, makeContainer("Blinking"));
+  | ["myProfile"] => ReactDOMRe.render(<MyProfile />, makeContainer("Profile"));
   |  _ => ReactDOMRe.render(<Navigation />, makeContainer("Navigation"));
   };
 
-  <></>
+  <div></div>
 };  
+
+// 5e3d52deaa3f54dd79193266cea5a2db49500175

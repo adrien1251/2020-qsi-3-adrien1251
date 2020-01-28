@@ -10,5 +10,8 @@ let make = _ => {
       <button onClick={_event => ReasonReactRouter.push("/blinkingGreeting")}>
         {React.string("blinkingGreeting :D")}
       </button>
+      <button onClick={_event => ReasonReactRouter.push("/myProfile")}>
+        {React.string("Profile :D")}
+      </button>
   </div>;
 };
